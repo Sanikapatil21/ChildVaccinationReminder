@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Child Vaccination Reminder - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu-EjCUNs-azwyk5sjoLU8XY8iYVHBTwKzF7JCfuKdlrXwmD6AGQ1PyK-DiIs0zGl4odo&usqp=CAU') no-repeat center center fixed;
+      background-size: cover;
+    }
+    .backdrop-blur {
+      backdrop-filter: blur(6px);
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+
+  <div class="backdrop-blur rounded-xl shadow-xl p-8 max-w-md w-full text-white">
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-xl font-bold">LOGIN TO CONTINUE</h2>
+      <button class="text-white text-xl font-bold hover:text-gray-400">&times;</button>
+    </div>
+
+    <form>
+      <label class="block mb-2 text-sm font-semibold">What's your e-mail?</label>
+      <input type="email" placeholder="E-mail" class="w-full px-4 py-2 mb-4 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+
+      <label class="block mb-2 text-sm font-semibold">Your password?</label>
+      <input type="password" placeholder="Password" class="w-full px-4 py-2 mb-6 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+
+      <a href="HospitlLogin.html">
+        <button type="button" class="w-full bg-blue-600 hover:bg-blue-700 transition py-2 rounded text-white font-semibold">
+          Login as Hospital
+        </button>
+      </a>
+
+      <a href="ChildLogin.html">
+        <button type="button" class="w-full bg-purple-600 hover:bg-purple-700 transition py-2 rounded text-white font-semibold mt-4">
+          Login as Child
+        </button>
+      </a>
+    </form>
+
+    <div class="flex justify-between mt-6 text-sm text-gray-300">
+      <a href="#" class="hover:underline">Create Account</a>
+      <a href="#" class="hover:underline">Forgot your password?</a>
+    </div>
+  </div>
+
+</body>
+</html>

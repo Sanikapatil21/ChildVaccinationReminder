@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>ChildVaccinationRemainder</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>UpdateVaccinePrice</display-name>
+    <servlet-name>UpdateVaccinePrice</servlet-name>
+    <servlet-class>com.vaccination.UpdateVaccinePrice</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>AddChild</display-name>
+    <servlet-name>AddChild</servlet-name>
+    <servlet-class>com.vaccination.AddChild</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>DeleteChild</display-name>
+    <servlet-name>DeleteChild</servlet-name>
+    <servlet-class>com.vaccination.DeleteChild</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>AddVaccineLogServlet</display-name>
+    <servlet-name>AddVaccineLogServlet</servlet-name>
+    <servlet-class>com.vaccination.AddVaccineLogServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>changePasswordHospital</display-name>
+    <servlet-name>changePasswordHospital</servlet-name>
+    <servlet-class>com.vaccination.changePasswordHospital</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>changePasswordHospital</servlet-name>
+    <url-pattern>/changePasswordHospital</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ChildLogin</display-name>
+    <servlet-name>ChildLogin</servlet-name>
+    <servlet-class>com.vaccination.ChildLogin</servlet-class>
+  </servlet>
+  
+</web-app>
